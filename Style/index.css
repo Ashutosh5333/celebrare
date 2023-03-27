@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Lora", serif;
 }
+
 body ,html{
     width: 100%;
     height: fit-content;
@@ -12,9 +13,8 @@ body ,html{
 }
 
 .nav{
-    /* border: 1px solid red; */
     margin-top: 5px;
-     height: 8vh;
+     height: 9vh;
      width: 90vw;
      border-radius: 10px;
      font-family: "Lora", serif;
@@ -25,8 +25,7 @@ body ,html{
 }
 
 .header-container{
-    border: 1px solid black;
-    height: 8vh;
+    height: 9vh;
     width: 90vw;
     display: flex;
     justify-content: space-around;
@@ -36,52 +35,50 @@ body ,html{
     border-radius: 0px 1rem 1rem 0px;
     font-family: "Lora", serif;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.217);
-    /* border-top: 1px solid rgba(31, 31, 31, 0.534); */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.747);
 }
 
-.header-category > img{
+.header-category-img > img{
      width: 90px;
      height: 29px;
+     margin-left: 10px;
+     margin-top: 10px;
 }
+
+.header-category{
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: playfair;
+    color: #000000;
+}
+
+
+.header-category-login{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.english{
+    border: 1px solid rgb(201, 197, 197);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.login{
+    padding: 5px 25px;
+}
+
 
          /* ----------  hamburger ----------  */
 
  .Container-hamburger > nav{
      height: 80vh;
-     width: 40%;
+     width: 70%;
      display: flex;
-     /* background: rgb(93, 20, 161); */
      clip-path: circle(0% at 30px 40px);
  }
 
- .Login-container{
-     border: 1px solid rgb(0, 140, 116);
-     background-color: rgb(0, 140, 116);
-     height: 20vh;
-     margin: auto;
-     /* padding: 50px; */
-     /* margin-left: 40px; */
- }
-
- .Login{
-    /* border: 1px solid blue; */
-    text-align: center;
-    justify-content: center;
-     justify-items: center;
-     margin: auto;
-     margin-top: 50px;
- }
-
- .Login > #button{
-     margin: auto;
-     text-align: center;
-     padding: 10px 80px;
-     border-radius: 50px;
-     justify-content: center;
-     justify-items: center;
- }
 
 
  .Container-hamburger #check{
@@ -109,21 +106,18 @@ body ,html{
 
  .list{
     list-style: none;
-    /* height: 80vh; */
     width: 100%;
-    border: 4px solid rgb(8, 237, 57);
  }
 
 
 
 .list li a{
-    border: 1px solid black;
      display: block;
    text-decoration: none;
    text-transform: uppercase;
    font-size: 1rem;
    padding: 20px;
-   text-align: center;
+   text-align: start;
    color: black;
 }
 
@@ -139,4 +133,74 @@ body ,html{
 
 .Container-hamburger #check:checked ~ nav{
     clip-path: circle(100%);
+}
+
+ /* --------------- hamburger catgeory --------- */
+
+.wedding-list-category{
+    display: flex;
+    gap:5px;
+    margin-left: 10px;
+}
+
+.wedding-list-category > img{
+     width: 30px;
+     height: 20px;
+     margin-top: 18px;
+     justify-items: flex-start;
+}
+
+#wed {
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 600;
+     font-style: italic;
+     font-family: "Lora", "sans-serif" !important;
+    color: #000000;
+}
+
+
+.Login-container{
+    border: 1px solid rgb(0, 140, 116);
+    background-color: rgb(0, 140, 116);
+    height: 20vh;
+    margin: auto;
+}
+
+.Login{
+   text-align: center;
+   justify-content: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+
+.Login > #button{
+    margin: auto;
+    text-align: center;
+    padding: 10px 80px;
+    border-radius: 50px;
+    justify-content: center;
+    justify-items: center;
+    font-family: lora;
+    font-size: 1.2rem;
+    background: #fff;
+    border: none;
+}
+
+@media screen and (max-width:1024px) {
+    .header-category{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:667px) {
+    
 }
