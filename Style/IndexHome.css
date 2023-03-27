@@ -1,0 +1,164 @@
+
+body{
+    scroll-behavior: smooth;
+}
+
+.Homepage-Container{
+    border: 1px solid red;
+     margin-top: 20px;
+     height: auto;
+}
+
+.Container-tutorial{
+    border: 1px solid black;
+     width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     gap: 5px;
+}
+
+.watch{
+     width: 60vw;
+     height: 100vh;
+}
+
+.wedding-card-background{
+     width: 40vw;
+      background-image: url("https://celebrare.in/assets/img/Group-1040.webp");
+     background-size: cover;
+     margin-left: 10px; 
+}
+
+.watch-container{
+     justify-content: flex-start;
+     width: 40vw;
+     margin: auto;
+     padding: 10px;
+     margin-top: 50px;
+}
+
+.Heading{
+     width: 400px;
+     padding: 5px;
+     line-height: 2.5rem;
+     width: 38vw;
+}
+
+.Heading-summary{
+    padding: 10px;
+    line-height: 2rem;
+}
+
+.Heading-summary p{
+    max-width: 27rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.button{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.button > button{
+    width: 400px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: rgb(211, 211, 211);
+    background: linear-gradient( 0deg, rgba(211, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 50% );
+    border: 2px solid gainsboro;
+    margin-right: 1rem;
+    font-size: medium;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: transform 0.5s;
+    color: black;
+    transition: scale 0.5s, background-color 0.5s;
+}
+
+.button >#tutorial{
+
+    padding: 1rem 2rem;
+    font-size: large;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    background: rgb(0, 118, 99);
+    background: linear-gradient( 0deg, rgba(0, 118, 99, 1) 50%, rgba(0, 175, 146, 1) 100% );
+    transition: transform 0.5s;
+    /* transition: scale 0.5s, background 0.5s; */
+}
+
+/* -------- rating ------- */
+
+.rating-Container{
+     box-shadow: 0 0 2px rgb(0 0 0);
+    width: 100%;
+    border-radius: 2rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: rgba(0, 0, 0, 0.8); 
+    margin-left: 20px;
+}
+
+.rating-text{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #444;
+    font-family: "Lora", serif;
+}
+
+.rating{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
+    font-family: "Lora", serif;
+    padding: 10px;
+}
+
+
+.rating-image{
+    margin: auto;
+     display: flex;
+     justify-content: space-around;
+    align-items: center;
+}
+
+.rating-image >img{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1024px) {
+    .Container-tutorial{
+         width: 95%;
+         margin: auto;
+    }
+    .watch{
+         width: 80vw;
+    }
+    .wedding-card-background{
+         width: 20vw;
+    }
+    .watch-container{
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width:667px) {
+     .Container-tutorial{
+        border: 5px solid green;
+         flex-direction: column;
+     }
+}

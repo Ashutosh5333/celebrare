@@ -8,8 +8,6 @@
 body ,html{
     width: 100%;
     height: fit-content;
-    margin: 0;
-    padding: 0;
 }
 
 .nav{
@@ -52,6 +50,10 @@ body ,html{
     color: #000000;
 }
 
+.header-category > a{
+    text-decoration: none;
+    color: #000000;
+}
 
 .header-category-login{
     display: flex;
