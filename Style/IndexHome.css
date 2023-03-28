@@ -12,6 +12,7 @@ body{
 .Container-tutorial{
     border: 1px solid black;
      width: 90%;
+     height: auto;
      margin: auto;
      display: flex;
      justify-content: space-between;
@@ -137,6 +138,43 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/* ------ Browse-Trending ------ */
+
+.Browse-Trending{
+    border: 2px solid rgb(68, 26, 111);
+    height: 80vh;
+    width: 95%;
+    margin: auto;
+}
+
+.Image-slider{
+     border: 3px solid rgb(25, 207, 83);
+     margin-top: 30px;
+     width: 90%;
+     height: 60vh;
+     margin: auto;
+
+}
+
+/* --------------- */
+
+.img-box> img{
+    width: 100%;
+    height: 300px;
+}
+.slide-contsiner .slide-content{
+      padding: 0 15px;
+      max-width: 1130px;
+      margin: 0 auto;
+}
+
+.card_slider{
+       padding: 20px 0;
+}
+
+
+
 
 
 @media screen and (max-width:1024px) {

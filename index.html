@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Style/index.css">
     <link rel="stylesheet" href="./Style//IndexHome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
      <nav class="nav" >
@@ -126,9 +127,120 @@
 
              </div>
 
+             <div class="Browse-Trending">
 
-       </div>
+                      <div class="Image-slider">
+                        <div class="slide-contsiner">
+                            <div class="slide-content">
+                                <div class="swiper card_slider">
+            
+                                    <div class="swiper-wrapper">
+                                     
+                                        <div class="swiper-slide">
+                                         <div class="img-box">
+                                            <img  src="https://celebrare.in/assets/img/wedding/south-indian-wedding.webp" alt="south-indian-wedding" >
+                                         </div>
+                                       </div>
+                
+                                       <div class="swiper-slide">
+                                        <div class="img-box">
+                                           <img  src="https://celebrare.in/assets/img/wedding/hindu-wedding.webp" alt="Hindu" >
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="img-box">
+                                           <img  src="https://celebrare.in/assets/img/wedding/punjabi-wedding2.webp" alt="punjabi" >
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="img-box">
+                                           <img  src="https://celebrare.in/assets/img/wedding/marathi-wedding.webp" alt="marathi-wedding" >
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="img-box">
+                                           <img  src="https://celebrare.in/assets/img/wedding/muslim-wedding.webp" alt="muslim-wedding" >
+                                        </div>
+                                      </div>
+                
+                                    </div>
+                                       <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                        <div class="autoplay-progress">
+                                          <svg ></svg> 
+                                         <!-- <circle ></circle> -->
+                                       <span></span>
+                                    </div>
+            
+                            </div>
+                         </div>
+                
+                      </div>
+             </div>
 
+                  
+           
+
+
+          </div>
+
+            <div class="Browse-Trending">
+                
+                <div class="Image-slider">
+
+                </div>
+            </div>
 
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script >
+          const progressCircle = document.querySelector(".autoplay-progress svg");
+         const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".card_slider", {
+       slidesPerView:3,
+       spaceBetween: 30,
+       loop:true,
+       speed:100, 
+        centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+        320:{
+            slidesPerView:1,
+        },
+        480:{
+            slidesPerView:2,
+        },
+        720:{
+            slidesPerView:3,
+        },
+        1320:{
+            slidesPerView:4,
+        }
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    
+     
+    });
+
+
+
+
+ </script>
