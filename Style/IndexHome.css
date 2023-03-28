@@ -11,7 +11,6 @@ body{
 }
 
 .Container-tutorial{
-    border: 1px solid black;
      width: 90%;
      height: auto;
      margin: auto;
@@ -22,7 +21,7 @@ body{
 
 .watch{
      width: 60vw;
-     height: 100vh;
+     height: auto;
 }
 
 .wedding-card-background{
@@ -41,7 +40,6 @@ body{
 }
 
 .Heading{
-    border: 1px solid red;
      width: 400px;
      padding: 5px;
      line-height: 2.5rem;
@@ -99,7 +97,7 @@ body{
 
 .rating-Container{
      box-shadow: 0 0 2px rgb(0 0 0);
-    width: 100%;
+    width: 90%;
     border-radius: 2rem;
     background-color: #fff;
     padding: 1rem 2rem;
@@ -443,7 +441,6 @@ body{
 
 @media screen and (max-width:667px) {
      .Container-tutorial{
-        border: 5px solid green;
          flex-direction: column;
      }
   .Heading{
@@ -464,7 +461,31 @@ body{
      width: 300px;
      font-size: 1rem;
    }
-    
+    .rating-Container{
+        margin-top: 2rem;
+         width: 100%;
+    }
+    .rating-text{
+      font-size: 1rem;
+    }
+    .rating{
+        font-size: 10px;
+    }
+    .rating-image > div > img{
+         width: 50px;
+    }
+    .Heading-summary{
+        text-align: center;
+    }
+   
+    .wedding-button > #view{
+         width: 70vw;
+    }
+
+    .Simplestep{
+        flex-direction: column;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width:770px) {
