@@ -1,5 +1,4 @@
 .Footer{
-    border: 2px solid rgb(6, 197, 19);
     margin-top: 10rem;
     height: 80vh;
     width: 90vw;
@@ -10,10 +9,27 @@
      gap: 10px;
 }
 
+.sectionone-clebere{
+    width: 20vw;
+    padding: 10px;
+}
+
+.sectionone-clebere> div {
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionone-clebere > div > img {
+    width: 70%;
+    margin: auto;
+}
+
+
 .sectionone{
     width: 20vw;
     padding: 10px;
 }
+
 .sectionone> div{
     justify-content: center;
     align-items: center;
@@ -23,6 +39,18 @@
      width: 70%;
      margin: auto;
 }
+
+.sectionone-stay{
+    width: 20vw;
+    padding: 10px;
+}
+
+.sectionone-stay > div > img {
+    width: 20vw;
+    padding: 10px;
+}
+
+
 
 .Cle-text{
      margin-top: 4rem;
@@ -78,4 +106,26 @@
   .foot-category > h1{
     color: #444;
     font-size: 1rem;
+  }
+
+
+
+  @media screen and (max-width:1024px) {
+       .sectionone-clebere{
+         display: none;
+       }
+       .sectionone-stay{
+         display: none;
+       } 
+  }
+
+  @media screen and (max-width:667px) {
+      .Footer{
+         flex-direction: column;
+         margin: auto;
+          margin-top: 5rem;
+      }
+      .foot-category{
+        display: none;
+      }
   }

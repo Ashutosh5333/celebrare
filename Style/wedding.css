@@ -1,0 +1,146 @@
+
+.Container{
+
+    width: 90%;
+    margin:auto;
+    margin-top: 5rem;
+}
+
+
+.weddinginvation{
+   width: 85%;
+   margin: auto;
+   height: 30vh;
+    display: flex;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+     gap: 10px;
+     height: 100%;
+     background-color: rgb(249, 249, 251);
+
+     border-radius: 15px;
+     display: flex;
+     padding: 2rem 0;
+}
+
+.right{
+     width: 50vw;
+}
+.left{
+    width:50vw;
+}
+
+.right > h1 { 
+     margin-top: 10px;
+     padding: 10px;
+}
+.right > p{
+    padding: 10px;
+    margin-top: 1rem;
+    color: grey;
+    font: 500 1.2rem "lora";
+}
+
+.view {
+    margin-top: 1rem;
+    color: #fff;
+    width: 30vw;
+    padding: 0.7rem 4rem;
+    font: 500 1.8rem "lora";
+    background-color: rgb(0, 118, 99);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+         
+  /* ------------------- wedding-list-category ------------------ */
+
+  .wedding-list-category{
+    margin-top: 20px;
+    height: 50vh;
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+  }
+
+  .Explore{
+     width: 20vw;
+     height: 50vh;
+  }
+
+  .explore-image{
+     display: flex;
+     justify-content: space-around;
+     position: relative;
+     top:50px;
+  }
+
+  .explore-image > img{
+     width: 10vw;
+     border-radius: 5px;
+  }
+
+  .left-img{
+    transform: rotateZ(-9deg);
+    left: 9%;
+  }
+
+  .left-img:hover{
+    cursor: pointer;
+    transform: rotateZ(10deg);
+    left: -5%;
+  }
+
+  .right-img{
+    transform: rotateZ(10deg);
+        left: -10%;
+  }
+
+  .category-wedding{
+    margin-top: 20px;
+    height: 20vh;
+    width: 20vw;
+    font-family: lora;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    border-radius: 5px;
+    aspect-ratio: 2/1;
+  }
+
+  .category-wedding > h1{
+       font-size: 1.2rem;
+       margin-top: 40px;
+  }
+
+.All > h1{
+     position: relative;
+     top: -50px;
+     text-align: center;
+     font-size: 1.2rem;
+     color: #444;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .right{
+        /* border: 3px solid red; */
+        width: 100vw;
+   }
+   .left{
+       width:0vw;
+   }
+   
+}
+
+@media screen and (max-width:880px) {
+    .wedding-list-category{
+         /* flex-direction: column; */
+        margin: auto;    
+       margin-top: 2rem;
+    }
+    
+}

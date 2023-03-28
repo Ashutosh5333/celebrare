@@ -4,17 +4,22 @@ body{
     scroll-behavior: smooth;
 }
 
+.checked {
+    color: orange;
+  }
+
 .Homepage-Container{
-    border: 1px solid red;
-     margin-top: 20px;
+     margin-top: 1rem;
      height: auto;
 }
 
 .Container-tutorial{
+    /* border: 4px solid green; */
      width: 90%;
      height: auto;
      margin: auto;
      display: flex;
+      /* margin-top: 4rem; */
      justify-content: space-between;
      gap: 5px;
 }
@@ -22,6 +27,7 @@ body{
 .watch{
      width: 60vw;
      height: auto;
+     margin-top: 3rem;
 }
 
 .wedding-card-background{
