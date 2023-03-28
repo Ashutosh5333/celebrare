@@ -1,0 +1,81 @@
+.Footer{
+    border: 2px solid rgb(6, 197, 19);
+    margin-top: 10rem;
+    height: 80vh;
+    width: 90vw;
+    margin: auto;
+
+     display: flex;
+     justify-content: space-around;
+     gap: 10px;
+}
+
+.sectionone{
+    width: 20vw;
+    padding: 10px;
+}
+.sectionone> div{
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionone > div > img{
+     width: 70%;
+     margin: auto;
+}
+
+.Cle-text{
+     margin-top: 4rem;
+     color: #000;
+     font-size: 1.2rem;
+     font-weight: 500;
+}
+
+.Cle-text>p{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: platfair;
+}
+
+
+/* ------- card categories --------- */
+
+  .category{
+     font-size: 10px;
+     color: rgba(0,0,0,.65);
+     margin-bottom: 1rem;
+  }
+  .sub-cate{
+    margin-top: 2rem;
+  }
+  .sub-cate > p{
+    color: #000;
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+  }
+
+
+  .image{
+     display: flex;
+     justify-content: space-between;
+     gap: 5px;
+  }
+
+  .Qr-Code{
+     margin-top: 2rem;
+  }
+
+  .Qr-Code> img{
+    width: 100%;
+  }
+
+  .foot-category{
+     margin-bottom: 4rem;
+      text-align: center;
+      color: #000;
+  }
+  .foot-category > h1{
+    color: #444;
+    font-size: 1rem;
+  }

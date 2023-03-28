@@ -412,15 +412,31 @@ body{
          text-align: center;
          width: 200px;
          border-radius: 50px;
-         padding: 10px;
+         display: flex;
+         justify-content: space-around;
+         padding: 15px;
+         background-color: #fff;
+         padding: 0.5rem 2rem;
+         border-radius: 2rem;
+         box-shadow: 0 0 2px rgb(0 0 0);
+         border: none;
+         font-weight: 600;
+         transition: 0.4s;
+         align-items: center;
+         margin-top: 0.5rem;
+         margin: auto;
        
        }
-       
+       .meassage > div > img{
+         width: 50px;
+       }
+
        .meassage > h2{
          font-weight: 600;
        }
-
-
+    .meassage:hover{
+        transform: translate(1);
+    }
 
 @media screen and (max-width:1024px) {
     .Container-tutorial{
